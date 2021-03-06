@@ -17,6 +17,17 @@ function createNewNote(body, notesArray)  {
     return note;
 }
 
+function validateNote(note) {
+    if (!note.title || typeof note.title !== 'string') {
+        return false
+    }
+    if (!note.text || typeof note.text !== 'string') {
+        return false
+    }
+    return true;
+}
+
+
 app.get('/api/notes', (req, res) => {
     res.json(notes);
 })
@@ -24,9 +35,14 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString();
 
-    const note = createNewNote(req.body, notes)
+    if (!validateNote(req.body)) {
+        res.status(400).send('Please provide a proper title and text for your note!');
+    }
+    else {
+        const note = createNewNote(req.body, notes)
+        res.json(note)
+    }
 
-    res.json(note)
 })
 
 app.listen(3001, () => {
