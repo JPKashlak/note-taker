@@ -1,92 +1,22 @@
 [
   {
-    "title": "Title",
-    "text": "Text Let's See",
+    "title": "Refactor John's Code",
+    "text": "Check John's repository by Thursday",
     "id": "1"
   },
   {
-    "title": "Title Again: Electric JavaScript",
-    "text": "Text Will Go Here",
+    "title": "Pick Up Groceries",
+    "text": "Butter, Milk, Eggs",
+    "id": "1"
+  },
+  {
+    "title": "Wash the Car",
+    "text": "It's a mess",
     "id": "2"
   },
   {
-    "title": "Am I an Array",
-    "text": "Or an object?",
-    "id": "2"
-  },
-  {
-    "title": "Am I an Array",
-    "text": "Or an object?",
-    "id": "6"
-  },
-  {
-    "title": "Am I an Array",
-    "text": "Or an object?",
-    "id": "4"
-  },
-  {
-    "title": "Hello",
-    "text": "Hi",
-    "id": "5"
-  },
-  {
-    "title": "Greetings",
-    "text": "Welcome to the world!",
-    "id": "6"
-  },
-  {
-    "title": "Hello Again",
-    "text": "Test Two",
-    "id": "7"
-  },
-  {
-    "title": "Why didn't this work before?",
-    "text": "Who knows...",
-    "id": "8"
-  },
-  {
-    "title": "adsfsad",
-    "text": "asdfasdfasd\n",
-    "id": "9"
-  },
-  {
-    "title": "asdas",
-    "text": "sfhgfhfdgh",
-    "id": "10"
-  },
-  {
-    "title": "asda",
-    "text": "asda",
-    "id": "11"
-  },
-  {
-    "title": "asdas",
-    "text": "sadsda",
-    "id": "12"
-  },
-  {
-    "title": "Title",
-    "text": "Text Let's See",
-    "id": "13"
-  },
-  {
-    "title": "Title",
-    "text": "Text Let's See",
-    "id": "14"
-  },
-  {
-    "title": "Title",
-    "text": "Text Let's See",
-    "id": "15"
-  },
-  {
-    "title": "Title",
-    "text": "Text Let's See",
-    "id": "16"
-  },
-  {
-    "title": "assa",
-    "text": "asdasd",
-    "id": "17"
+    "title": "Exercise",
+    "text": "I'm overdue",
+    "id": "3"
   }
 ]
