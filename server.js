@@ -1,10 +1,16 @@
-const fs = require('fs');
-const path = require('path');
 const express = require('express');
 const app = express();
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-const { notes } = require('./Develop/db/db')
+const { notes } = require('./Develop/db/db');
+const PORT = process.env.PORT || 3001;
+const htmlRoutes = require("./Develop/routes/htmlRoutes/index");
+app.use('/', htmlRoutes);
+// const apiRoutes = require('./Develop/routes/apiRoutes/index');
+// app.use('/api', apiRoutes);
+const fs = require('fs');
+const path = require('path');
+
+
+
 
 function createNewNote(body, notesArray)  {
     const note = body
@@ -27,24 +33,10 @@ function validateNote(note) {
     return true;
 }
 
-
-app.get('/api/notes', (req, res) => {
-    res.json(notes);
-})
-
-app.post('/api/notes', (req, res) => {
-    req.body.id = notes.length.toString();
-
-    if (!validateNote(req.body)) {
-        res.status(400).send('Please provide a proper title and text for your note!');
-    }
-    else {
-        const note = createNewNote(req.body, notes)
-        res.json(note)
-    }
-
-})
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static('public'));
 
 app.listen(3001, () => {
-    console.log('API server live')
+    console.log(`Server is live on PORT ${PORT}`)
 })
