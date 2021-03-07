@@ -1,28 +1,32 @@
-{
-  "notes": [
-    {
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "title": "Title",
-      "text": "Text Let's See",
-      "id": "1"
-    },
-    {
-      "title": "Title Again: Electric JavaScript",
-      "text": "Text Will Go Here",
-      "id": "2"
-    },
-    {
-      "title": "Title Again: Electric JavaScript",
-      "text": "Text Will Go Here",
-      "id": "3"
-    },
-    {
-      "title": "In the future",
-      "text": "There will be notes",
-      "id": "4"
-    }
-  ]
-}
+[
+  {
+    "title": "Title",
+    "text": "Text Let's See",
+    "id": "1"
+  },
+  {
+    "title": "Title Again: Electric JavaScript",
+    "text": "Text Will Go Here",
+    "id": "2"
+  },
+  {
+    "title": "Am I an Array",
+    "text": "Or an object?",
+    "id": "2"
+  },
+  {
+    "title": "Am I an Array",
+    "text": "Or an object?",
+    "id": "6"
+  },
+  {
+    "title": "Am I an Array",
+    "text": "Or an object?",
+    "id": "4"
+  },
+  {
+    "title": "Hello",
+    "text": "Hi",
+    "id": "5"
+  }
+]
